@@ -6,18 +6,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
 	<header>
+		<a name="menu"></a>
 		<section class="row">
-		  <nav class="col s12">
+		  <nav class=" menu col s12">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo"><p>Logo</p></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">About</a></li>
-        <li><a href="badges.html"><i class="fa fa-user" aria-hidden="true"></i>work</a></li>
-        <li><a href="collapsible.html"><i class="fa fa-square" aria-hidden="true"></i>Pircing</a></li>
-        <li><a href="collapsible.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work"><i class="fa fa-user" aria-hidden="#team"></i>work</a></li>
+        <li><a href="#pricing"><i class="fas fa-th"></i>Pircing</a></li>
+        <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -26,10 +28,10 @@
   	<div class="fondo col s12">
   	<h1>Start something that matters</h1>
   	<p>Stop washing valuable time with projects that just isn't you</p>
-  	 <a class="btn-large disabled">LEARN MORE AND START TODAY</a>
+  	 <a class="btn-large disabled"><p>LEARN MORE AND START TODAY</p></a>
   </button>
-  	</div>
-  	<div>
+  	
+  	<div class="redes">
   		<i class="fab fa-facebook-square"></i>
   		<i class="fab fa-instagram"></i>
   		<i class="fab fa-snapchat"></i>
@@ -38,53 +40,58 @@
   		<i class="fab fa-linkedin-in"></i>
 
   	</div>
+  	</div>
   </section>
 	</header>
 	<section class="row">
-		<div class="col s12">
+		<a name="about"></a>
+		<div class=" about col s12"">
+
 			<h1>ABOUT THE COMPANY</h1>
-			<p>Key features of our company</p>
+			<h4>Key features of our company</h4>
 		</div>
 		<div class="row">
-		<div class="col s3">
+		<div class="about2 col s3">
 			<i class="fa fa-desktop" aria-hidden="true"></i>
 			<h3>Responsive<h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam enim, aliquid tenetur temporibus necessitatibus.</p>
 		</div>
-		<div class="col s3">
+		<div class="about2 col s3">
 			<i class="fa fa-heart" aria-hidden="true"></i>
 			<h3>Pasion<h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam enim, aliquid tenetur temporibus necessitatibus.</p>
 		</div>
-		<div class="col s3">
-			<i class="fa fa-diamond" aria-hidden="true"></i>
+		<div class="about2 col s3">
+			<i class="far fa-gem"></i>
 			<h3>Desing<h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam enim, aliquid tenetur temporibus necessitatibus.</p>
 		</div>
-		<div class="col s3">
+		<div class="about2 col s3">
 			<i class="fa fa-cog" aria-hidden="true"></i>
-			<h3>Desing<h3>
+			<h3>Support<h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam enim, aliquid tenetur temporibus necessitatibus.</p>
 		</div>
 		</div>
 
 	</section>
-	<section class="row">
+	<section class="desing row">
+		<a name="work"></a>
 		<div class="col s6">
 			<h3>We know design.<h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam enim, aliquid tenetur temporibus necessitatibus.</p>
-				<a class="waves-effect waves-light btn-large"><i class="fas fa-th">View Our Works</i></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus accusantium magni, repellendus aliquam similique laboriosam.</p>
+				<a id="negro"class=" btn-large disabled"><i class="fas fa-th"><span>View our work</span></i></a>
 		</div>
 		<div class="col s6">
-			<img src="img/phone_buildings.jpg" alt="">
+			<img class="img1" src="img/phone_buildings.jpg" alt="">
 		</div>
 	</section>
-	<section class="col s12">
+	<section class="team col s12">
+		<a name="team"></a>
 		<h3>THE TEAM</h3>
-		<p>The ones who runs this company</p>
+		<h4>The ones who runs this company</h4>
 		<div class="row">
 		<div class="card col s3">
-			<img src="img/team2.jpg" alt="">
+			<img class="img2" src="img/team2.jpg" alt="">
 			<h3>Johh Doe</h3>
 			<h4>CEO & Founder</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, pariatur.</p>
@@ -92,21 +99,21 @@
 		</div>
 
 		<div class="card col s3">
-			<img src="img/team1.jpg" alt="">
+			<img class="img2" src="img/team1.jpg" alt="">
 			<h3>Anja Doe</h3>
 			<h4>Art Director</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, pariatur.</p>
 			<a class="btn-large disabled"><i class="fa fa-envelope" aria-hidden="true"></i>contact</a>
 		</div>
-		<div class=" card col s3">
-			<img src="img/team3.jpg" alt="">
+		<div class="card col s3">
+			<img class="img2" src="img/team3.jpg" alt="">
 			<h3>Mike Ross</h3>
 			<h4>Web Designer</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, pariatur.</p>
 			<a class="btn-large disabled"><i class="fa fa-envelope" aria-hidden="true"></i>contact</a>
 		</div>
-		<div class=" card col s3">
-			<img src="img/team4.jpg" alt="">
+		<div class="card col s3">
+			<img class="img2" src="img/team4.jpg" alt="">
 			<h3>Dan Star</h3>
 			<h4>Designer</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, pariatur.</p>
@@ -114,88 +121,95 @@
 		</div>
 		</div>
 	</section>
-	<section class="row">
-		<div class="col s3">
+	<section class="clients row">
+		<div class="txt1 col s3">
 			<h1>14+</h1>
 			<p>Partners</p>
 		</div>
-		<div class="col s3">
+		<div class="txt1 col s3">
 			<h1>55+</h1>
 			<p>Projects Done</p>
 		</div>
-		<div class="col s3">
+		<div class="txt1 col s3">
 			<h1>89+</h1>
 			<p>Happy Clients</p>
 		</div>
-		<div class="col s3">
+		<div class="txt1 col s3">
 			<h1>150+</h1>
 			<p>Meetings</p>
 		</div>
 	</section>
-	<section class="row">
+	<section class=" work row">
 		<div class="col s12">
-			<h1>OUR WORK</h1>
-			<p>What we've done for people</p>
+			<h3>OUR WORK</h3>
+			<h4>What we've done for people</h4>
 		</div>
 			<div class="row">
 				<div class="col s3">
-					<img src="img/tech_mic.jpg" alt="">
+					<img class="img3" src="img/tech_mic.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_phone.jpg" alt="">
+					<img class="img3" src="img/tech_phone.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_drone.jpg" alt="">
+					<img class="img3" src="img/tech_drone.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_sound.jpg" alt="">
+					<img class="img3" src="img/tech_sound.jpg" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col s3">
-					<img src="img/tech_tablet.jpg" alt="">
+					<img class="img3" src="img/tech_tablet.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_camera.jpg" alt="">
+					<img class="img3" src="img/tech_camera.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_typewriter.jpg" alt="">
+					<img class="img3" src="img/tech_typewriter.jpg" alt="">
 				</div>
 				<div class="col s3">
-					<img src="img/tech_tableturner.jpg" alt="">
+					<img class="img3" src="img/tech_tableturner.jpg" alt="">
 				</div>
 			</div>
 
 		</div>
 	</section>
-	<section class="row">
+	<section class="skill row">
 		<div class="col s6">
-			<h1> Our Skill<h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ex ipsa neque itaque magni delectus consequuntur, ea in fuga cupiditate.</p>
+			<h3> Our Skill<h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p> Perspiciatis ex ipsa neque itaque magni delectus consequuntur, ea in fuga cupiditate.</p>
 		</div>
-		<div class="col s6">
-	  <div class="progress">
-	  	<i class="fas fa-camera-alt"> Photography</i>
-      <div class="determinate" style="width: 70%"></div>
-      <div class="progress">
-      	<i class="fas fa-desktop">Web desing</i>
-      <div class="determinate" style="width: 70%"></div>
-      <div class="progress">
-      	<i class="fas fa-image">Photoshop</i>
-      <div class="determinate" style="width: 70%"></div>
-  	</div>
+		<div class="barras col s6">
+			<div class="txt2"><i class="fas fa-camera"></i>Photography</div>
+			<div class="progress">
+ 			 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+			</div>
+			<div class="txt2"><i class="fas fa-desktop"></i>Web Desing</div>
+			<div class="progress">
+ 			 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+			</div>
+			<div class="txt2"><i class="far fa-image"></i>Photoshop</div>
+			<div class="progress">
+ 			 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+			</div>		
 		</div>
 	</section>
-	<section class="row">
+	<section class="pricing">
+		<a name="pricing"></a>
+		<div class="row">
 		<div class="col s12">
-			<h1>PRICING</h1>
+			<h3>PRICING</h3>
 			<p>Choose a pricing plan that fits your needs.</p>
 		</div>
+	</div>
+		<div class="row">
 		<div class="card col s4">
 			<table>
         <thead>
           <tr>
-              <th>Basic</th>
+              <th class="basic">Basic</th>
           </tr>
         </thead>
 
@@ -219,7 +233,7 @@
 
           </tr>
            <tr>
-            <td><a class="btn-large disabled">Sign Up</a></td>
+            <td><a id="btn-negro" class="btn-large disabled">Sign Up</a></td>
 
           </tr>
         </tbody>
@@ -229,7 +243,7 @@
 			<table>
         <thead>
           <tr>
-              <th>Pro</th>
+              <th class="pro">Pro</th>
           </tr>
         </thead>
 
@@ -253,18 +267,17 @@
 
           </tr>
           <tr>
-            <td><a class="btn-large disabled">Sign Up</a></td>
+            <td><a id="btn-negro" class="btn-negro btn-large disabled">Sign Up</a></td>
 
           </tr>
         </tbody>
       </table>
 		</div>
-		</div>
 		<div class="card col s4">
 			<table>
         <thead>
           <tr>
-              <th>Premium</th>
+              <th class="basic" >Premium</th>
           </tr>
         </thead>
 
@@ -288,63 +301,78 @@
 
           </tr>
           <tr>
-            <td><a class="btn-large disabled">Sign Up</a></td>
+            <td><a id="btn-negro" class="btn-negro btn-large disabled">Sign Up</a></td>
 
           </tr>
         </tbody>
       </table>
 		</div>
+	</div>	
+	</div>
 	</section>
-	<section class="row">
+	<section class="contacto">
+		<a name="contact"></a>
+		<div class="row">
 		<div class="col s12">
-			<h1>CONTACT</h1>
+			<h3>CONTACT</h3>
 			<p>lets get in touch. Send us a message:</p>
 		</div>
+	</div>
 		<div class="row">
-			<div class="col s6">
-				<i class="fas fa-map-marker-alt"> Chicago, US</i>
-				<i class="fas fa-phone">Phone: +00151515</i>
-				<i class="fas fa-envelope">Email:mail.@mail.com</i>
-			
-				<div class="row">
-    <form class="col s12">
-      <div class="row">
-          <div class="input-field col s12">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-    </form>
-    <a class="btn-large disabled"><i class="fas fa-paper-plane"></i>SEND MESSAGE</a>
-
-  </div>
+			<div class="mapa col s6">
+				<div>
+				<i class="fas fa-map-marker-alt"> </i><h5>Chicago, US</h5>
 			</div>
+			<div>
+				<i class="fas fa-phone"></i>
+				<h5>Phone: +00151515</h5>
+			</div>
+			<div>
+				<i class="fas fa-envelope"></i>
+				<h5>Email:mail.@mail.com</h5>
+			</div>
+	<form>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" id="nombre">
+  
+            <label for="correo">Correo electrónico: </label>
+            <input type="text" id="correo">
+  
+            <label for="mensaje"> Mensaje: </label>
+            <input type="text" id="mensaje">	
 
-			<div class="col s6">
-			<div id="map">My map will go here</div>
+   <a id="btn-negro" class="btn-large disabled"><i class="fas fa-paper-plane"></i><span>SEND MESSAGE</span></a>
+</form>
+
+</div>
+
+<div class=" mapa col s6">
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30101.400486549064!2d-99.2039338541167!3d19.426440733394752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd413d10d4fe6015!2sThe+Pool!5e0!3m2!1ses!2smx!4v1529112004539" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 		
-			</div>
-		</div>
-	</section>
+</div>
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
+
+<footer class="row">
+	<div class="col s12">
+	<button id="btn-blanco"  type="button" class="btn btn-link"><i class="fas fa-arrow-up"></i>To the top <a href="#menu"></a></button>
+	<div class="redes2">
+  		<i class="fab fa-facebook-square"></i>
+  		<i class="fab fa-instagram"></i>
+  		<i class="fab fa-snapchat"></i>
+  		<i class="fab fa-pinterest-p"></i>
+  		<i class="fab fa-twitter"></i>
+  		<i class="fab fa-linkedin-in"></i>
+  	</div>
+  	</div>
+	
+</footer>
 
 </html>
